@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFF169E2-2B59-447F-9A38-27898E7AF6B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLM.Dal</RootNamespace>
+    <AssemblyName>SLM.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\CmtCampaignProductModel.cs" />
+    <Compile Include="Models\CmtMappingProductModel.cs" />
+    <Compile Include="Models\CmtMsProductGroupModel.cs" />
+    <Compile Include="Models\KKCocMsAolModel.cs" />
+    <Compile Include="Models\KKSlmMsAccessRightModel.cs" />
+    <Compile Include="Models\KKSlmMsAmphurModel.cs" />
+    <Compile Include="Models\KKSlmMsBranchModel.cs" />
+    <Compile Include="Models\KKSlmMsBrandModel.cs" />
+    <Compile Include="Models\KKSlmMsCalendarBranchModel.cs" />
+    <Compile Include="Models\KKSlmMsCampaignMasterModel.cs" />
+    <Compile Include="Models\KKSlmMsCampaignModel.cs" />
+    <Compile Include="Models\KKSlmMsCardTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsChannelModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigActivityModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigBranchPrivilegeModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigCloseJobModel.cs" />
+    <Compile Include="Models\KKSlmMsDepartmentModel.cs" />
+    <Compile Include="Models\KKSlmMsModelModel.cs" />
+    <Compile Include="Models\KKSlmMsModuleModel.cs" />
+    <Compile Include="Models\KKSlmMsOccupationModel.cs" />
+    <Compile Include="Models\KKSlmMsOptionModel.cs" />
+    <Compile Include="Models\KKSlmMsPaymentTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsPlanBancModel.cs" />
+    <Compile Include="Models\KKSlmMsPositionModel.cs" />
+    <Compile Include="Models\KKSlmMsPrivilegeOwnerModel.cs" />
+    <Compile Include="Models\KKSlmMsPromotionModel.cs" />
+    <Compile Include="Models\KKSlmMsProvinceModel.cs" />
+    <Compile Include="Models\KKSlmMsSlaModel.cs" />
+    <Compile Include="Models\KKSlmMsStaffGroupModel.cs" />
+    <Compile Include="Models\KKSlmMsStaffModel.cs" />
+    <Compile Include="Models\KKSlmMsStaffTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsSubmodelModel.cs" />
+    <Compile Include="Models\KKSlmMsSystemAssignModel.cs" />
+    <Compile Include="Models\KKSlmMsTambolModel.cs" />
+    <Compile Include="Models\KKSlmNoteModel.cs" />
+    <Compile Include="Models\KKSlmPhoneCallModel.cs" />
+    <Compile Include="Models\KKSlmProductBundleConfigModel.cs" />
+    <Compile Include="Models\KKSlmScreenModel.cs" />
+    <Compile Include="Models\KKSlmTrActivityModel.cs" />
+    <Compile Include="Models\KKSLMTrCampaignFinalModel.cs" />
+    <Compile Include="Models\KKSlmTrChannelInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrCusInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrHistoryModel.cs" />
+    <Compile Include="Models\KKSlmTrLeadModel.cs" />
+    <Compile Include="Models\KKSlmTrNoticeModel.cs" />
+    <Compile Include="Models\KKSlmTrProductInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrUploadLeadModel.cs" />
+    <Compile Include="Models\SearchLeadModel.cs" />
+    <Compile Include="Models\StoreProcedure.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SLM_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SLM_DB.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SLM.Resource\SLM.Resource.csproj">
+      <Project>{0B58133E-618D-4506-9F57-C76358B87A5D}</Project>
+      <Name>SLM.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SLM_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SLM_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
